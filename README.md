@@ -4,16 +4,37 @@
 
 ## Overview
 AI Storytime Maker is an automated tool that generates eerie storytelling videos with:
+- AI-generated story creation to ensure unique and engaging narratives
 - AI-generated speech (creepy voice transformation)
 - Background music and visuals
 - Automatic subtitle generation
 - Video resizing for mobile-friendly viewing
 
-This repository leverages **Fish Speech TTS, MoviePy, Whisper AI, and Pydub** to fully automate the storytelling process.
+This repository leverages **Gemma2, Fish Speech TTS, MoviePy, Whisper AI, and Pydub** to fully automate the storytelling process.
+
+---
+
+## Structure
+
+### 1️⃣ **Story Generation - `Story.py`**
+- Uses **Gemma2** to generate unique stories.
+- Saves generated stories to prevent repetition.
+- Summarizes stories for reference.
+
+### 2️⃣ **Video Creation - `Video.py`**
+- Uses **Fish Speech TTS** to convert stories into creepy AI-generated voice.
+- Speeds up narration for pacing.
+- Combines voice, background music, and visuals to generate the final video.
+
+### 3️⃣ **Subtitle Generation - `AutoCAPS.py`**
+- Uses **Whisper AI** for transcribing the generated video.
+- Creates automatic captions and overlays them onto the video.
+- Resizes video for mobile-friendly viewing.
 
 ---
 
 ## Features
+✅ **AI-Powered Storytelling** - Unique stories are generated for every run.  
 ✅ **Text-to-Speech (TTS)** - Converts written stories into a creepy AI-generated voice.  
 ✅ **Background Audio & Video** - Automatically merges generated audio with selected visuals.  
 ✅ **Whisper AI Transcription** - Adds auto-generated subtitles to the final video.  
@@ -39,16 +60,28 @@ pip install -r requirements.txt
 
 ---
 
-### 1️⃣ Place Your Story
-- Write your story inside `story.txt`.
-- Place a reference voice file in `Audio/Reference.mp3`.
+### Usage
 
-### 2️⃣ Run the Script
+#### 1️⃣ Run the Story Generation Script
 ```bash
-python main.py
+python Story.py
 ```
+- Generates and saves a unique AI-generated story.
 
-### 3️⃣ Generated Output
+#### 2️⃣ Create the Video with Audio
+```bash
+python Video.py
+```
+- Converts the story into creepy AI voice.
+- Combines voice, background music, and visuals.
+
+#### 3️⃣ Add Auto-Generated Captions
+```bash
+python AutoCAPS.py
+```
+- Transcribes the video and overlays subtitles.
+
+### 4️⃣ Generated Output
 - **Final video**: `final_video.mp4`
 - **Audio files**: Stored in the `Audio/` directory.
 - **Subtitled video**: `final_video_with_subtitles.mp4`
@@ -56,7 +89,7 @@ python main.py
 ---
 
 ## Configuration
-Customize the settings by modifying `main.py`:
+Customize the settings by modifying `Video.py` and `AutoCAPS.py`:
 
 | Setting | Description | Default Value |
 |---------|-------------|---------------|
@@ -71,6 +104,7 @@ Customize the settings by modifying `main.py`:
 ## Dependencies
 
 📦 The following models and libraries are used:
+- **Gemma2** (https://ollama.com)
 - **Fish Speech TTS** (https://huggingface.co/fishaudio/fish-speech-1)
 - **Whisper AI** (https://github.com/openai/whisper)
 - **MoviePy** (https://zulko.github.io/moviepy/)
@@ -93,6 +127,7 @@ gradio_client
 whisper
 numpy
 pillow
+ollama
 ```
 
 ---
