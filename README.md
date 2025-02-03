@@ -3,7 +3,7 @@
 ### Important:
 Please place the video in the `Audio` folder and name it `Background.mp4`.
 
-You can access the video I use [here](#https://www.dropbox.com/scl/fi/twmr1drewxw6ywdf81ok6/Background.mp4?rlkey=grzpzglv4h3272jenmddgve4x&st=upc1uw3i&dl=0).
+You can access the video I use [here](https://www.dropbox.com/scl/fi/twmr1drewxw6ywdf81ok6/Background.mp4?rlkey=grzpzglv4h3272jenmddgve4x&st=upc1uw3i&dl=0).
 
 ## Overview
 AI Storytime Maker is an automated tool that generates eerie storytelling videos with:
