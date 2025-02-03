@@ -1,0 +1,6 @@
+moviepy
+pydub
+gradio_client
+whisper
+numpy
+pillow
