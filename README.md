@@ -1,4 +1,4 @@
-# AI Storytime Maker
+# AI Storytime Maker For Tiktok, Youtube and Instagram
 
 ### Important:
 Please place the video in the `Audio` folder and name it `Background.mp4`.
