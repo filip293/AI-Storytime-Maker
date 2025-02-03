@@ -30,6 +30,7 @@ def create_creepy_voice(story_file, reference_audio_path, output_audio):
         if os.path.exists(audio_path):
             if os.path.exists(output_audio):
                 os.remove(output_audio)
+
             shutil.copy(audio_path, output_audio)
             print(f"Audio saved as {output_audio}")
         else:
@@ -54,7 +55,6 @@ def create_video_with_audio(output_audio, background_video, background_music, ou
         voice_clip = AudioFileClip(output_audio)
         music_clip = AudioFileClip(background_music).subclip(0, voice_clip.duration)
         combined_audio = CompositeAudioClip([voice_clip.volumex(1.0), music_clip.volumex(0.3)])
-
         print(f"Audio duration: {combined_audio.duration} seconds")
 
         if video_clip.duration <= combined_audio.duration + 40:
@@ -63,10 +63,8 @@ def create_video_with_audio(output_audio, background_video, background_music, ou
         max_start_time = video_clip.duration - combined_audio.duration - 40
         start_time = random.uniform(0, max_start_time)
         print(f"Selected start time: {start_time} seconds")
-
         video_subclip = video_clip.subclip(start_time, start_time + combined_audio.duration)
         final_video = video_subclip.set_audio(combined_audio)
-
         print("Combined audio set to the final video.")
         final_video.write_videofile(output_video, codec='libx264', audio_codec='aac', fps=24, audio=True)
         print(f"Final video saved as {output_video}")
