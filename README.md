@@ -1,6 +1,9 @@
 # AI Storytime Maker
 
-![AI Storytime Maker](https://via.placeholder.com/1200x400?text=AI+Storytime+Maker)
+### Important:
+Please place the video in the `Audio` folder and name it `Background.mp4`.
+
+You can access the video I use [here](#).
 
 ## Overview
 AI Storytime Maker is an automated tool that generates eerie storytelling videos with:
