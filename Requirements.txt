@@ -4,3 +4,4 @@ gradio_client
 whisper
 numpy
 pillow
+ollama
