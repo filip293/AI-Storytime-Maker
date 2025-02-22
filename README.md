@@ -122,19 +122,6 @@ To use Whisper AI, ensure you download the required model before running the scr
 
 ---
 
-## Requirements.txt
-```
-moviepy
-pydub
-gradio_client
-whisper
-numpy
-pillow
-ollama
-```
-
----
-
 ## Contributing
 Feel free to use and contribute! Fork the repository and submit a pull request with your improvements.
 
