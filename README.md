@@ -118,7 +118,7 @@ To use Whisper AI, ensure you download the required model before running the scr
 ---
 
 ## Example Output
-![Example Output](https://via.placeholder.com/800x400?text=Final+Generated+Video)
+![Example Output](https://www.tiktok.com/@aipsgstories/video/7457299964171914501?is_from_webapp=1&sender_device=pc)
 
 ---
 
