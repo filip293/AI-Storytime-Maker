@@ -5,6 +5,17 @@ Please place the video in the `Audio` folder and name it `Background.mp4`.
 
 You can access the video I use [here](https://www.dropbox.com/scl/fi/twmr1drewxw6ywdf81ok6/Background.mp4?rlkey=grzpzglv4h3272jenmddgve4x&st=upc1uw3i&dl=0).
 
+## ImageMagick Configuration (Important!)
+If ImageMagick does not work, you must manually specify its path in MoviePy's configuration file.
+
+Edit the following line in `.venv/Lib/site-packages/moviepy/config.py`:
+```python
+IMAGEMAGICK_BINARY = r"C:\Program Files\ImageMagick-7.0.11-Q16\magick.exe"
+```
+Replace the path with the correct location of your `magick.exe` file.
+
+---
+
 ## Overview
 AI Storytime Maker is an automated tool that generates eerie storytelling videos with:
 - AI-generated story creation to ensure unique and engaging narratives
