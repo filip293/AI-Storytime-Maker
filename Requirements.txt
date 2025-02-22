@@ -1,7 +1,7 @@
 moviepy==1.0.3
 pydub
 gradio_client
-whisper
+openai-whisper
 numpy
 pillow
 ollama
